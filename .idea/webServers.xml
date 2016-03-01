@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="b3c3c057-fb7f-47c5-9298-9af6a4c8db26" name="github https" url="https://github.com/corentin359/Aikido.git">
+        <fileTransfer host="https://github.com/corentin359/Aikido.git" port="21" accessType="FTPS" password="dfc8dfc3dfcfdfc4dfc9dfc5dfc9dfc5df99df9fdf93df84" username="corentin359">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
