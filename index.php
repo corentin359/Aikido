@@ -1,12 +1,5 @@
-<?php
 
-/**
- * Created by PhpStorm.
- * User: corentin
- * Date: 01/03/16
- * Time: 07:50
- *
- */
+<?php
 $ROOT = __DIR__;
 $DS = DIRECTORY_SEPARATOR;
 $controller;
@@ -25,12 +18,12 @@ else
 		$controller = "accueil";
 	}
 }
-require_once "{$ROOT}{$DS}controller{$DS}Root;
 switch ($controller)
 {
-	case "accueil": require "{$ROOT}{$DS}controller{$DS}ControllerAccueil.php"; break;
-	case "utilisateur": require "{$ROOT}{$DS}controller{$DS}ControllerUtilisateur.php"; break;
+	case "accueil": require "{$ROOT}{$DS}controller{$DS}controllerAccueil.php"; break;
+	case "utilisateur": require "{$ROOT}{$DS}controller{$DS}controllerUtilisateur.php"; break;
 default:
-	require "{$ROOT}{$DS}controller{$DS}ControllerAccueil.php";
+	require "{$ROOT}{$DS}controller{$DS}controllerAccueil.php";
 }
 ?>
+

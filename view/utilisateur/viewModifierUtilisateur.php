@@ -1,13 +1,6 @@
-<?php
 
-/**
- * Created by PhpStorm.
- * User: corentin
- * Date: 01/03/16
- * Time: 14:59
- */
+<?php
 	require "view{$DS}header.php";
-	<?php
 
     foreach ($tableauEnfant as $ligne)
 	{

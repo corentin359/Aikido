@@ -1,11 +1,4 @@
 <?php
-
-/**
- * Created by PhpStorm.
- * User: corentin
- * Date: 01/03/16
- * Time: 14:47
- */
 require_once "Model.php";
 
 class ModelAccueil {
@@ -25,7 +18,7 @@ class ModelAccueil {
             return $rep->fetchAll();
         } catch (PDOException $e) {
             if (Conf::getDebug()) {
-                return false;
+            return false;
             }
         }
     }

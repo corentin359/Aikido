@@ -1,25 +1,19 @@
-<?php
 
-/**
- * Created by PhpStorm.
- * User: corentin
- * Date: 01/03/16
- * Time: 14:43
- */
+<?php
 require_once "{$ROOT}{$DS}model{$DS}Model.php";
-class ModelEnfant extends ModelEleve
-{
+class ModelEnfant extends Model_eleve
+{    
     protected $idEnfant;
     protected $ceintureEnfant;
     protected $barretteEnfant;
-    public function __construct($id = NULL, $ceinture = NULL, $barrette = NULL)
-    {
-        if (!is_null($id) && !is_null($ceinture) && !is_null($barrette))
-        {
-            parent::__construct();
-            $this->idEnfant = $id;
-            $this->ceintureEnfant = $ceinture;
-            $this->barretteEnfant = $barrette;
+	public function __construct($id = NULL, $ceinture = NULL, $barrette = NULL)
+	{
+		if (!is_null($id) && !is_null($ceinture) && !is_null($barrette))
+		{
+			parent::__construct();
+			$this->idEnfant = $id;
+			$this->ceintureEnfant = $ceinture;
+			$this->barretteEnfant = $barrette;
         }
     }
     public static function getAllEnfant() {
@@ -36,8 +30,9 @@ class ModelEnfant extends ModelEleve
         }
     }
     public function getCeintureEnfant()
-    {
+	{
         return $this->ceintureEnfant;
-    }
+	}
 }
 ?>
+
