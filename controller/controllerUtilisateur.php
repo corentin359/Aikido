@@ -2,12 +2,10 @@
 <?php
 require_once ("{$ROOT}{$DS}model{$DS}utilisateur{$DS}ModelUtilisateur.php"); // chargement des modèle
 require_once ("{$ROOT}{$DS}model{$DS}utilisateur{$DS}ModelAdherent.php");
-require_once ("{$ROOT}{$DS}model{$DS}utilisateur{$DS}ModelEleve.php");
 require_once ("{$ROOT}{$DS}model{$DS}utilisateur{$DS}ModelEnfant.php");
-require_once ("{$ROOT}{$DS}model{$DS}utilisateur{$DS}ModelAdultes.php");
 require_once ("{$ROOT}{$DS}model{$DS}utilisateur{$DS}ModelEnseignant.php");
 require_once ("{$ROOT}{$DS}model{$DS}utilisateur{$DS}ModelMembreDuBureau.php");
-require_once ("{$ROOT}{$DS}model{$DS}utilisateur{$DS}ModelParent.php");
+require_once ("{$ROOT}{$DS}model{$DS}utilisateur{$DS}ModelContacteAdherent.php");
 $action;
 $ajouterUtilisateur;
 $modifierUtilisateur;

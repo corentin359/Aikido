@@ -1,10 +1,10 @@
 
 <?php
 require_once "{$ROOT}{$DS}model{$DS}Model.php";
-class ModelMembreDuBureau extends Model_adherent
+class ModelMembreDuBureau extends ModelAdherent
 {    
-    protected $idMembreDuBureau;
-    protected $roleMembreDuBureau;
+    private $idMembreDuBureau;
+    private $roleMembreDuBureau;
 	public function __construct($id = NULL, $role = NULL)
 	{
 		if (!is_null($id) && !is_null($role))

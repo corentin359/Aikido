@@ -1,9 +1,9 @@
 
 <?php
 require_once "{$ROOT}{$DS}model{$DS}Model.php";
-class Model_enseignant extends Model_adherent
+class Model_enseignant extends ModelAdherent
 {    
-    protected $id_enseignant;
+    private $id_enseignant;
 	public function __construct($id = NULL)
 	{
 		if (!is_null($id))

@@ -1,7 +1,7 @@
 
 <?php
 require_once "{$ROOT}{$DS}model{$DS}Model.php";
-class Model_adherent extends ModelUtilisateur
+class ModelAdherent extends ModelUtilisateur
 {    
 	protected $id_adherent;
 //	Informations personnelles 2

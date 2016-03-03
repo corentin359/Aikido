@@ -1,11 +1,11 @@
 
 <?php
 require_once "{$ROOT}{$DS}model{$DS}Model.php";
-class ModelEnfant extends Model_eleve
+class ModelEnfant extends ModelAdherent
 {    
-    protected $idEnfant;
-    protected $ceintureEnfant;
-    protected $barretteEnfant;
+    private $idEnfant;
+    private $ceintureEnfant;
+    private $barretteEnfant;
 	public function __construct($id = NULL, $ceinture = NULL, $barrette = NULL)
 	{
 		if (!is_null($id) && !is_null($ceinture) && !is_null($barrette))
