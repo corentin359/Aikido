@@ -6,7 +6,7 @@ App::load();
 if(isset($_GET['p'])){
     $page = $_GET['p'];
 }else{
-    $page = 'home.show';
+    $page = 'accueil.show';
 }
 // un paterne :
 // page[0] = le controleur

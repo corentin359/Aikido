@@ -9,17 +9,20 @@ class Config
     private $settings = [];
     private static $_instance;
 
+    public function __construct($file)
+    {
+        $this->settings = require($file);
+    }
+    /**
+     * getInstance créé une insance de la classe Config si elle n'éxiste pas deja
+     * @return Une instance de la classe Config
+     */
     public static function getInstance($file)
     {
         if (is_null(self::$_instance)) {
             self::$_instance = new Config($file);
         }
         return self::$_instance;
-    }
-
-    public function __construct($file)
-    {
-        $this->settings = require($file);
     }
 
     public function get($key)

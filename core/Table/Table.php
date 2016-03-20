@@ -63,6 +63,13 @@ class Table
         return $return;
     }
 
+    /**
+     * query permet de faire une requette SQL
+     * @param $statement la requette SQL
+     * @param null $attributes si il y a des attribues fais une requette préparer sinon une standare
+     * @param bool $one si on veut en recuperer un seul resultat
+     * @return mixed
+     */
     public function query($statement, $attributes = null, $one = false){
         if($attributes){
             return $this->db->prepare(

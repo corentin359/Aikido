@@ -1,13 +1,11 @@
 <?php
 
 namespace App\Controller;
-
 use Core\Controller\Controller;
 use \App;
 
 class AppController extends Controller{
-
-    protected  $template = 'default';
+    protected $club;
 
     /**
      * AppController constructor.
@@ -16,12 +14,11 @@ class AppController extends Controller{
     public function __construct(){
         $this->viewPath = ROOT . '/app/Views/';
     }
-
     /**
-     * @param $model_name charge les tables
+     * loadModel charge les tables
+     * @param $model_name le nom du model a charger
      */
     protected function loadModel($model_name){
         $this->$model_name = App::getInstance()->getTable($model_name);
     }
-
 }
